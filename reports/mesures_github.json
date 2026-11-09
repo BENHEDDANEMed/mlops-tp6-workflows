@@ -1,0 +1,56 @@
+[
+  {
+    "run_number": 1,
+    "id": 42600538739,
+    "commit": "86386b99ed1ac3583d372411607cc5b2195a11a4",
+    "conclusion": "success",
+    "url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600538739",
+    "metriques": {
+      "f1": 0.8423,
+      "precision": 0.8698,
+      "recall": 0.8166
+    },
+    "journal_qualite": [
+      "2026-11-09T10:24:22.3790335Z F1 = 0.8423 | seuil = 0.82",
+      "2026-11-09T10:24:22.3790951Z OK : modele accepte",
+      "2026-11-09T10:24:22.3790294Z F1 = 0.8423 | seuil = 0.82",
+      "2026-11-09T10:24:22.3790946Z OK : modele accepte"
+    ]
+  },
+  {
+    "run_number": 2,
+    "id": 42600943153,
+    "commit": "e3e6a8e2b7c7807453bf8fbd4c04ddc5cf14ad02",
+    "conclusion": "failure",
+    "url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600943153",
+    "metriques": {
+      "f1": 0.25,
+      "precision": 0.9429,
+      "recall": 0.1441
+    },
+    "journal_qualite": [
+      "2026-11-09T10:27:40.4749867Z F1 = 0.25 | seuil = 0.82",
+      "2026-11-09T10:27:40.4750449Z ECHEC : F1 0.25 < seuil 0.82 : modele refuse",
+      "2026-11-09T10:27:40.4749822Z F1 = 0.25 | seuil = 0.82",
+      "2026-11-09T10:27:40.4750441Z ECHEC : F1 0.25 < seuil 0.82 : modele refuse"
+    ]
+  },
+  {
+    "run_number": 3,
+    "id": 42601105619,
+    "commit": "894b0553fda5607e8bb7a27a92d1db51ca57a304",
+    "conclusion": "success",
+    "url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42601105619",
+    "metriques": {
+      "f1": 0.8423,
+      "precision": 0.8698,
+      "recall": 0.8166
+    },
+    "journal_qualite": [
+      "2026-11-09T10:29:07.2097506Z F1 = 0.8423 | seuil = 0.82",
+      "2026-11-09T10:29:07.2098023Z OK : modele accepte",
+      "2026-11-09T10:29:07.2097464Z F1 = 0.8423 | seuil = 0.82",
+      "2026-11-09T10:29:07.2098015Z OK : modele accepte"
+    ]
+  }
+]

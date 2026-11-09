@@ -1,0 +1,323 @@
+[
+  {
+    "id": 42601105619,
+    "name": "pipeline-mlops",
+    "run_number": 3,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "894b0553fda5607e8bb7a27a92d1db51ca57a304",
+    "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42601105619",
+    "created_at": "2026-11-09T10:28:20Z",
+    "jobs": [
+      {
+        "nom": "verifier",
+        "conclusion": "success",
+        "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42601105619/job/129105505209",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-09T10:28:23Z",
+            "completed_at": "2026-11-09T10:28:23Z"
+          },
+          {
+            "name": "Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-09T10:28:23Z",
+            "completed_at": "2026-11-09T10:28:24Z"
+          },
+          {
+            "name": "Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-09T10:28:24Z",
+            "completed_at": "2026-11-09T10:28:26Z"
+          },
+          {
+            "name": "Installer les dependances",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-09T10:28:26Z",
+            "completed_at": "2026-11-09T10:28:58Z"
+          },
+          {
+            "name": "Recreer les donnees v2 (stockage DVC local indisponible)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-09T10:28:58Z",
+            "completed_at": "2026-11-09T10:28:59Z"
+          },
+          {
+            "name": "Rejouer le pipeline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-09T10:28:59Z",
+            "completed_at": "2026-11-09T10:29:07Z"
+          },
+          {
+            "name": "Verifier la regle de qualite",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-09T10:29:07Z",
+            "completed_at": "2026-11-09T10:29:07Z"
+          },
+          {
+            "name": "Conserver les rapports",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-09T10:29:07Z",
+            "completed_at": "2026-11-09T10:29:08Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-09T10:29:08Z",
+            "completed_at": "2026-11-09T10:29:08Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16,
+            "started_at": "2026-11-09T10:29:08Z",
+            "completed_at": "2026-11-09T10:29:08Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17,
+            "started_at": "2026-11-09T10:29:08Z",
+            "completed_at": "2026-11-09T10:29:08Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42600943153,
+    "name": "pipeline-mlops",
+    "run_number": 2,
+    "status": "completed",
+    "conclusion": "failure",
+    "head_sha": "e3e6a8e2b7c7807453bf8fbd4c04ddc5cf14ad02",
+    "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600943153",
+    "created_at": "2026-11-09T10:26:55Z",
+    "jobs": [
+      {
+        "nom": "verifier",
+        "conclusion": "failure",
+        "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600943153/job/129104949795",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-09T10:26:58Z",
+            "completed_at": "2026-11-09T10:27:00Z"
+          },
+          {
+            "name": "Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-09T10:27:00Z",
+            "completed_at": "2026-11-09T10:27:01Z"
+          },
+          {
+            "name": "Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-09T10:27:01Z",
+            "completed_at": "2026-11-09T10:27:03Z"
+          },
+          {
+            "name": "Installer les dependances",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-09T10:27:03Z",
+            "completed_at": "2026-11-09T10:27:33Z"
+          },
+          {
+            "name": "Recreer les donnees v2 (stockage DVC local indisponible)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-09T10:27:33Z",
+            "completed_at": "2026-11-09T10:27:34Z"
+          },
+          {
+            "name": "Rejouer le pipeline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-09T10:27:34Z",
+            "completed_at": "2026-11-09T10:27:40Z"
+          },
+          {
+            "name": "Verifier la regle de qualite",
+            "status": "completed",
+            "conclusion": "failure",
+            "number": 7,
+            "started_at": "2026-11-09T10:27:40Z",
+            "completed_at": "2026-11-09T10:27:40Z"
+          },
+          {
+            "name": "Conserver les rapports",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-09T10:27:40Z",
+            "completed_at": "2026-11-09T10:27:41Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-11-09T10:27:41Z",
+            "completed_at": "2026-11-09T10:27:41Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16,
+            "started_at": "2026-11-09T10:27:41Z",
+            "completed_at": "2026-11-09T10:27:42Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17,
+            "started_at": "2026-11-09T10:27:42Z",
+            "completed_at": "2026-11-09T10:27:42Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42600538739,
+    "name": "pipeline-mlops",
+    "run_number": 1,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "86386b99ed1ac3583d372411607cc5b2195a11a4",
+    "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600538739",
+    "created_at": "2026-11-09T10:23:33Z",
+    "jobs": [
+      {
+        "nom": "verifier",
+        "conclusion": "success",
+        "html_url": "https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600538739/job/129103595154",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-09T10:23:37Z",
+            "completed_at": "2026-11-09T10:23:38Z"
+          },
+          {
+            "name": "Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-09T10:23:38Z",
+            "completed_at": "2026-11-09T10:23:39Z"
+          },
+          {
+            "name": "Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-09T10:23:39Z",
+            "completed_at": "2026-11-09T10:23:39Z"
+          },
+          {
+            "name": "Installer les dependances",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-09T10:23:39Z",
+            "completed_at": "2026-11-09T10:24:14Z"
+          },
+          {
+            "name": "Recreer les donnees v2 (stockage DVC local indisponible)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-09T10:24:14Z",
+            "completed_at": "2026-11-09T10:24:15Z"
+          },
+          {
+            "name": "Rejouer le pipeline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-09T10:24:15Z",
+            "completed_at": "2026-11-09T10:24:22Z"
+          },
+          {
+            "name": "Verifier la regle de qualite",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-09T10:24:22Z",
+            "completed_at": "2026-11-09T10:24:22Z"
+          },
+          {
+            "name": "Conserver les rapports",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-09T10:24:22Z",
+            "completed_at": "2026-11-09T10:24:23Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-09T10:24:23Z",
+            "completed_at": "2026-11-09T10:24:27Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v7",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16,
+            "started_at": "2026-11-09T10:24:27Z",
+            "completed_at": "2026-11-09T10:24:27Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17,
+            "started_at": "2026-11-09T10:24:27Z",
+            "completed_at": "2026-11-09T10:24:27Z"
+          }
+        ]
+      }
+    ]
+  }
+]

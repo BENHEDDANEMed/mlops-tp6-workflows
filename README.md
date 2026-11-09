@@ -18,8 +18,19 @@ GitHub Actions régénère les données v2 et applique la même règle de qualit
 | Quick run sur pool-tp via le worker | 0,8423 | Completed |
 
 Les preuves détaillées sont dans `reports/essais_tp6.json` et
-`reports/preuves_prefect.json`. La vérification en ligne est documentée
-séparément après les exécutions de GitHub Actions.
+`reports/preuves_prefect.json`.
+
+## Trois essais GitHub Actions effectués
+
+| Run | État | F1 | Lien |
+|---|---|---:|---|
+| 1 - modèle normal | Réussi | 0,8423 | [Exécution 1](https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600538739) |
+| 2 - dégradation volontaire | Échec dans la règle de qualité | 0,25 | [Exécution 2](https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42600943153) |
+| 3 - restauration avec git revert | Réussi | 0,8423 | [Exécution 3](https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions/runs/42601105619) |
+
+Les métriques et les lignes de journal de ces trois essais proviennent des
+artefacts GitHub, téléchargés puis vérifiés dans `reports/mesures_github.json`.
+Le modèle final est restauré à `max_depth: 12`.
 
 ## Reprendre le TP sous PowerShell
 
@@ -87,7 +98,8 @@ d'échec n'est configurée dans ce TP.
 
 - `reports/tp6_synthese.md` : comparaison Prefect / intégration continue.
 - `reports/reponses_tp6.md` : réponses argumentées aux six questions.
-- Le rapport PDF réunit les résultats et les captures de l'interface.
+- [Rapport PDF](reports/BENHEDDANE_Mohamed_5IASD_G8.pdf) : résultats, captures et réponses.
+- `reports/captures/` : captures originales des interfaces Prefect et GitHub Actions.
 
 Le dépôt source du TP3 conserve son historique et ses tags v1/v2 ; le TP6
 est publié dans un dépôt séparé. Aucun e-mail n'est envoyé automatiquement.

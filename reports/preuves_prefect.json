@@ -197,7 +197,7 @@
       "created_by": null,
       "updated_by": null,
       "work_pool_name": null,
-      "status": "READY",
+      "status": "NOT_READY",
       "enforce_parameter_schema": true
     },
     {
@@ -254,7 +254,7 @@
       },
       "work_queue_name": "default",
       "work_queue_id": "f108f5ef-a73f-4880-9633-3e4c456b33ff",
-      "last_polled": "2026-11-09T10:21:33.348370Z",
+      "last_polled": "2026-11-09T10:24:32.339820Z",
       "parameter_openapi_schema": {
         "title": "Parameters",
         "type": "object",
@@ -389,7 +389,7 @@
       "updated": "2026-11-09T10:17:31.740969Z",
       "name": "ProcessWorker 47e3dc82-6b17-4f14-8a4b-197d34b68d46",
       "work_pool_id": "7f88acba-7cbd-49b7-84be-a297d4b707ad",
-      "last_heartbeat_time": "2026-11-09T10:21:31.914771Z",
+      "last_heartbeat_time": "2026-11-09T10:24:31.952051Z",
       "heartbeat_interval_seconds": 30,
       "status": "ONLINE"
     }

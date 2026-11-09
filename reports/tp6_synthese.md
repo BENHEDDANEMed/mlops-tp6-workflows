@@ -17,6 +17,18 @@
 - La vérification utilisée par la CI renvoie localement les codes 0, 1 et 0 pour ces trois états.
 - Les preuves Prefect et les éventuelles preuves GitHub restent distinctes : un test local ne prouve pas l'exécution sur GitHub.
 
+## Observations GitHub Actions
+
+| Essai en ligne | Commit | F1 | Résultat réel |
+|---|---|---:|---|
+| Run 1, modèle normal | 86386b99 | 0,8423 | success |
+| Run 2, modèle volontairement dégradé | e3e6a8e2 | 0,25 | failure à l'étape Verifier la regle de qualite |
+| Run 3, restauration avec git revert | 894b0553 | 0,8423 | success |
+
+Les métriques et extraits des journaux téléchargés sont dans `mesures_github.json`.
+Les trois exécutions sont consultables dans [GitHub Actions](https://github.com/BENHEDDANEMed/mlops-tp6-workflows/actions).
+Les rapports restent disponibles comme artefact, y compris pour le run rouge.
+
 ## Conclusion (5 lignes)
 
 La chaîne d'intégration continue valide chaque modification avant son utilisation opérationnelle.  
