@@ -12,3 +12,8 @@ mlruns/
 .vscode/
 
 # ATTENTION : pas de data/, models/ ni reports/ ici : DVC s'en charge
+
+# Services et journaux locaux du TP6
+.prefect/
+.tp6/
+

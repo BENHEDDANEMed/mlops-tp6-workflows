@@ -1,0 +1,28 @@
+name: tp6-workflows
+prefect-version: 3.9.2
+
+build: null
+push: null
+pull:
+  - prefect.deployments.steps.set_working_directory:
+      directory: 'C:/Users/pc/Documents/mlops-workspace/tp6-workflows'
+
+deployments:
+  - name: hebdomadaire-pool
+    description: Reentrainement hebdomadaire avec validation F1, TP06.
+    entrypoint: flow_mlops.py:reentrainement
+    parameters: {}
+    tags: [tp6]
+    concurrency_limit: 1
+    schedules:
+      - cron: '0 6 * * 1'
+        timezone: Africa/Casablanca
+        active: true
+    work_pool:
+      name: pool-tp
+      work_queue_name: default
+      job_variables:
+        working_dir: 'C:/Users/pc/Documents/mlops-workspace/tp6-workflows'
+        env:
+          PREFECT_API_URL: http://127.0.0.1:4200/api
+          PYTHONIOENCODING: utf-8

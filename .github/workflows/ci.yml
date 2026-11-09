@@ -1,0 +1,39 @@
+name: pipeline-mlops
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+      - name: Installer les dependances
+        run: python -m pip install -r requirements-ci.txt
+      - name: Recreer les donnees v2 (stockage DVC local indisponible)
+        run: |
+          python donnees.py
+          python nouvelles_donnees.py
+      - name: Rejouer le pipeline
+        run: python -m dvc repro
+      - name: Verifier la regle de qualite
+        run: python verifier_qualite.py
+      - name: Conserver les rapports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: rapports
+          path: |
+            reports/metrics.json
+            reports/confusion.png
+          if-no-files-found: warn

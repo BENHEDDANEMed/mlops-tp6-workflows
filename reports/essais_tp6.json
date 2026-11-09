@@ -1,0 +1,41 @@
+[
+  {
+    "nom": "TP6-B-modele-valide",
+    "max_depth": 12,
+    "flow_run_id": "6d4d62dd-ce95-4ddc-adeb-fb4ba8ae0e05",
+    "etat": "Completed",
+    "metriques": {
+      "f1": 0.8423,
+      "precision": 0.8698,
+      "recall": 0.8166
+    },
+    "code_verification": 0,
+    "sortie_verification": "F1 = 0.8423 | seuil = 0.82\nOK : modele accepte\n"
+  },
+  {
+    "nom": "TP6-C-modele-refuse",
+    "max_depth": 2,
+    "flow_run_id": "3559dbfc-84cc-4556-bd6f-7099739da46d",
+    "etat": "Failed",
+    "metriques": {
+      "f1": 0.25,
+      "precision": 0.9429,
+      "recall": 0.1441
+    },
+    "code_verification": 1,
+    "sortie_verification": "F1 = 0.25 | seuil = 0.82\nECHEC : F1 0.25 < seuil 0.82 : modele refuse\n"
+  },
+  {
+    "nom": "TP6-C-modele-restaure",
+    "max_depth": 12,
+    "flow_run_id": "3d66a6de-2d7e-46d0-a323-e948cb72d7d8",
+    "etat": "Completed",
+    "metriques": {
+      "f1": 0.8423,
+      "precision": 0.8698,
+      "recall": 0.8166
+    },
+    "code_verification": 0,
+    "sortie_verification": "F1 = 0.8423 | seuil = 0.82\nOK : modele accepte\n"
+  }
+]

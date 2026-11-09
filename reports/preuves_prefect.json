@@ -1,0 +1,397 @@
+{
+  "versions": {
+    "prefect": "3.9.2",
+    "dvc": "3.67.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "mlflow": "3.18.0"
+  },
+  "executions": [
+    {
+      "id": "d60ccca3-0fd8-4352-ae79-1a8461b67bf1",
+      "nom": "fragrant-kagu",
+      "etat": "Completed",
+      "debut": "2026-11-09T10:21:30.762450Z",
+      "fin": "2026-11-09T10:21:36.978973Z",
+      "duree_secondes": 6.216523,
+      "deployment_id": "ab1d1a14-1631-4bd7-ba81-d6faaf499c62",
+      "work_pool_name": "pool-tp",
+      "tasks": [
+        {
+          "nom": "notifier-def",
+          "etat": "Completed"
+        },
+        {
+          "nom": "valider-be3",
+          "etat": "Completed"
+        },
+        {
+          "nom": "lire_metriques-871",
+          "etat": "Completed"
+        },
+        {
+          "nom": "rejouer_pipeline-184",
+          "etat": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "e5c44181-823c-43da-890a-bca65e3f85fc",
+      "nom": "luminous-dog",
+      "etat": "Completed",
+      "debut": "2026-11-09T10:18:49.753787Z",
+      "fin": "2026-11-09T10:18:56.034086Z",
+      "duree_secondes": 6.280299,
+      "deployment_id": "0a46642a-36a7-4833-b178-9a37afb4c0f3",
+      "work_pool_name": null,
+      "tasks": [
+        {
+          "nom": "notifier-bb4",
+          "etat": "Completed"
+        },
+        {
+          "nom": "valider-be1",
+          "etat": "Completed"
+        },
+        {
+          "nom": "lire_metriques-da9",
+          "etat": "Completed"
+        },
+        {
+          "nom": "rejouer_pipeline-e1d",
+          "etat": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "3d66a6de-2d7e-46d0-a323-e948cb72d7d8",
+      "nom": "TP6-C-modele-restaure",
+      "etat": "Completed",
+      "debut": "2026-11-09T10:14:33.214351Z",
+      "fin": "2026-11-09T10:14:44.996246Z",
+      "duree_secondes": 11.781895,
+      "deployment_id": null,
+      "work_pool_name": null,
+      "tasks": [
+        {
+          "nom": "notifier-20c",
+          "etat": "Completed"
+        },
+        {
+          "nom": "valider-171",
+          "etat": "Completed"
+        },
+        {
+          "nom": "lire_metriques-cbe",
+          "etat": "Completed"
+        },
+        {
+          "nom": "rejouer_pipeline-9f0",
+          "etat": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "3559dbfc-84cc-4556-bd6f-7099739da46d",
+      "nom": "TP6-C-modele-refuse",
+      "etat": "Failed",
+      "debut": "2026-11-09T10:13:49.160926Z",
+      "fin": "2026-11-09T10:14:32.190797Z",
+      "duree_secondes": 43.029871,
+      "deployment_id": null,
+      "work_pool_name": null,
+      "tasks": [
+        {
+          "nom": "valider-6c1",
+          "etat": "Failed"
+        },
+        {
+          "nom": "lire_metriques-4a5",
+          "etat": "Completed"
+        },
+        {
+          "nom": "rejouer_pipeline-5d9",
+          "etat": "Completed"
+        }
+      ]
+    },
+    {
+      "id": "6d4d62dd-ce95-4ddc-adeb-fb4ba8ae0e05",
+      "nom": "TP6-B-modele-valide",
+      "etat": "Completed",
+      "debut": "2026-11-09T10:13:42.421404Z",
+      "fin": "2026-11-09T10:13:48.591050Z",
+      "duree_secondes": 6.169646,
+      "deployment_id": null,
+      "work_pool_name": null,
+      "tasks": [
+        {
+          "nom": "notifier-be3",
+          "etat": "Completed"
+        },
+        {
+          "nom": "valider-f67",
+          "etat": "Completed"
+        },
+        {
+          "nom": "lire_metriques-947",
+          "etat": "Completed"
+        },
+        {
+          "nom": "rejouer_pipeline-5f0",
+          "etat": "Completed"
+        }
+      ]
+    }
+  ],
+  "deploiements": [
+    {
+      "id": "0a46642a-36a7-4833-b178-9a37afb4c0f3",
+      "created": "2026-11-09T10:15:54.324798Z",
+      "updated": "2026-11-09T10:15:54.311375Z",
+      "name": "hebdomadaire",
+      "version": "1275ac12",
+      "description": "None",
+      "flow_id": "601024c0-b73b-4b4e-8758-3e482383e3ce",
+      "paused": false,
+      "schedules": [
+        {
+          "id": "294e17a5-1ee1-4f7e-acfb-5e4525b4c136",
+          "created": "2026-11-09T10:15:54.398922Z",
+          "updated": "2026-11-09T10:15:54.398969Z",
+          "deployment_id": "0a46642a-36a7-4833-b178-9a37afb4c0f3",
+          "schedule": {
+            "cron": "0 6 * * 1",
+            "timezone": "Africa/Casablanca",
+            "day_or": true
+          },
+          "active": true,
+          "max_scheduled_runs": null,
+          "parameters": {},
+          "slug": null
+        }
+      ],
+      "concurrency_limit": null,
+      "global_concurrency_limit": null,
+      "concurrency_options": null,
+      "job_variables": {},
+      "parameters": {},
+      "tags": [],
+      "labels": {
+        "prefect.flow.id": "601024c0-b73b-4b4e-8758-3e482383e3ce"
+      },
+      "work_queue_name": null,
+      "work_queue_id": null,
+      "last_polled": "2026-11-09T10:20:47.920452Z",
+      "parameter_openapi_schema": {
+        "title": "Parameters",
+        "type": "object",
+        "properties": {}
+      },
+      "path": ".",
+      "pull_steps": [],
+      "entrypoint": "flow_mlops.py:reentrainement",
+      "storage_document_id": null,
+      "infrastructure_document_id": null,
+      "created_by": null,
+      "updated_by": null,
+      "work_pool_name": null,
+      "status": "READY",
+      "enforce_parameter_schema": true
+    },
+    {
+      "id": "ab1d1a14-1631-4bd7-ba81-d6faaf499c62",
+      "created": "2026-11-09T10:16:15.997438Z",
+      "updated": "2026-11-09T10:16:16.093000Z",
+      "name": "hebdomadaire-pool",
+      "version": "1275ac12",
+      "description": "Reentrainement hebdomadaire avec validation F1, TP06.",
+      "flow_id": "601024c0-b73b-4b4e-8758-3e482383e3ce",
+      "paused": false,
+      "schedules": [
+        {
+          "id": "4e303a7a-8025-46ad-a234-965c69501f84",
+          "created": "2026-11-09T10:16:16.044857Z",
+          "updated": "2026-11-09T10:16:16.044889Z",
+          "deployment_id": "ab1d1a14-1631-4bd7-ba81-d6faaf499c62",
+          "schedule": {
+            "cron": "0 6 * * 1",
+            "timezone": "Africa/Casablanca",
+            "day_or": true
+          },
+          "active": true,
+          "max_scheduled_runs": null,
+          "parameters": {},
+          "slug": null
+        }
+      ],
+      "concurrency_limit": null,
+      "global_concurrency_limit": {
+        "id": "20694310-66ea-460b-ae01-2dfea9b070f8",
+        "created": "2026-11-09T10:16:16.080170Z",
+        "updated": "2026-11-09T10:21:37.051000Z",
+        "active": true,
+        "name": "deployment:ab1d1a14-1631-4bd7-ba81-d6faaf499c62",
+        "limit": 1,
+        "active_slots": 0,
+        "slot_decay_per_second": 0.0
+      },
+      "concurrency_options": null,
+      "job_variables": {
+        "working_dir": "C:/Users/pc/Documents/mlops-workspace/tp6-workflows",
+        "env": {
+          "PREFECT_API_URL": "http://127.0.0.1:4200/api",
+          "PYTHONIOENCODING": "utf-8"
+        }
+      },
+      "parameters": {},
+      "tags": [
+        "tp6"
+      ],
+      "labels": {
+        "prefect.flow.id": "601024c0-b73b-4b4e-8758-3e482383e3ce"
+      },
+      "work_queue_name": "default",
+      "work_queue_id": "f108f5ef-a73f-4880-9633-3e4c456b33ff",
+      "last_polled": "2026-11-09T10:21:33.348370Z",
+      "parameter_openapi_schema": {
+        "title": "Parameters",
+        "type": "object",
+        "properties": {}
+      },
+      "path": null,
+      "pull_steps": [
+        {
+          "prefect.deployments.steps.set_working_directory": {
+            "directory": "C:/Users/pc/Documents/mlops-workspace/tp6-workflows"
+          }
+        }
+      ],
+      "entrypoint": "flow_mlops.py:reentrainement",
+      "storage_document_id": null,
+      "infrastructure_document_id": null,
+      "created_by": null,
+      "updated_by": null,
+      "work_pool_name": "pool-tp",
+      "status": "READY",
+      "enforce_parameter_schema": true
+    }
+  ],
+  "work_pools": [
+    {
+      "id": "7f88acba-7cbd-49b7-84be-a297d4b707ad",
+      "created": "2026-11-09T10:15:23.639469Z",
+      "updated": "2026-11-09T10:17:31.752000Z",
+      "name": "pool-tp",
+      "description": null,
+      "type": "process",
+      "base_job_template": {
+        "job_configuration": {
+          "command": "{{ command }}",
+          "env": "{{ env }}",
+          "labels": "{{ labels }}",
+          "name": "{{ name }}",
+          "stream_output": "{{ stream_output }}",
+          "working_dir": "{{ working_dir }}"
+        },
+        "variables": {
+          "properties": {
+            "name": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "Name given to infrastructure created by a worker.",
+              "title": "Name"
+            },
+            "env": {
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "description": "Environment variables to set when starting a flow run.",
+              "title": "Environment Variables",
+              "type": "object"
+            },
+            "labels": {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "description": "Labels applied to infrastructure created by a worker.",
+              "title": "Labels",
+              "type": "object"
+            },
+            "command": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "The command to use when starting a flow run. In most cases, this should be left blank and the command will be automatically generated by the worker.",
+              "title": "Command"
+            },
+            "stream_output": {
+              "default": true,
+              "description": "If enabled, workers will stream output from flow run processes to local standard output.",
+              "title": "Stream Output",
+              "type": "boolean"
+            },
+            "working_dir": {
+              "anyOf": [
+                {
+                  "format": "path",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "If provided, workers will open flow run processes within the specified path as the working directory. Otherwise, a temporary directory will be created.",
+              "title": "Working Directory"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "is_paused": false,
+      "concurrency_limit": null,
+      "status": "READY",
+      "default_queue_id": "f108f5ef-a73f-4880-9633-3e4c456b33ff",
+      "storage_configuration": {
+        "bundle_upload_step": null,
+        "bundle_execution_step": null,
+        "default_result_storage_block_id": null
+      },
+      "active_slots": null
+    }
+  ],
+  "workers": [
+    {
+      "id": "2fa10091-a711-4e5f-824d-8a2fe4636f69",
+      "created": "2026-11-09T10:17:31.740958Z",
+      "updated": "2026-11-09T10:17:31.740969Z",
+      "name": "ProcessWorker 47e3dc82-6b17-4f14-8a4b-197d34b68d46",
+      "work_pool_id": "7f88acba-7cbd-49b7-84be-a297d4b707ad",
+      "last_heartbeat_time": "2026-11-09T10:21:31.914771Z",
+      "heartbeat_interval_seconds": 30,
+      "status": "ONLINE"
+    }
+  ]
+}
